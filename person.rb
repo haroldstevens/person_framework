@@ -24,4 +24,12 @@ class Person
     @phone_no << phone_no
   end
 
+  def remove_email(position)
+    @emails.delete_at position
+  end
+
+  def remove_phone_no(position)
+    @phone_no.delete_at position
+  end
+
 end
