@@ -63,4 +63,27 @@ describe "Person class" do
     expect(person.to_s).to eq "Joe Bloggs was born on 1990-01-01.\n Their email addresses are: [\"joe@foo.com\"].\n Their phone numbers are: [\"07982635473\", \"07853648282\"]"
   end
 
+  it 'should be able to display a printed version' do
+    person = Person.new("joe", "bloggs", "1 Jan 1990")
+    person.add_email "joe@foo.com"
+    person.add_email "joe.bloggs@work.com"
+    person.add_phone_no "07982635473"
+    
+
+    expect(person.print_details).to eq 
+      "
+      Joe Bloggs
+      ----------
+      Date of Birth: 01 January 1990
+
+      Email Addresses:
+      - joe@foo.com
+      - Joe.bloggs@work.com
+
+      Phone Numbers:
+      - 07982635473
+    "
+
+  end
+
 end

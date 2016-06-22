@@ -36,4 +36,22 @@ class Person
     return "#{fullname} was born on #{dob}.\n Their email addresses are: #{emails}.\n Their phone numbers are: #{phone_no}"
   end
 
+  def print_details
+    return ""
+    return "Joe Bloggs"
+    return ""
+    return "-" * fullname.length
+    return "Date of Birth: #{dob.strftime("%d %B %Y")}"
+    return ""
+    return "Email Addresses: "
+    @emails.each do |e| 
+      return "- " + e 
+    end
+    return ""
+    return "Phone Numbers: "
+    @phone_number.each do |p| 
+      return "- " + p
+    end
+  end
+
 end
