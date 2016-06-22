@@ -32,4 +32,8 @@ class Person
     @phone_no.delete_at position
   end
 
+  def to_s
+    return "#{fullname} was born on #{dob}.\n Their email addresses are: #{emails}.\n Their phone numbers are: #{phone_no}"
+  end
+
 end

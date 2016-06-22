@@ -54,6 +54,13 @@ describe "Person class" do
     expect(person.phone_no).to eq ["07853648282"]
   end
 
+  it 'should display the information in one string' do
+    person = Person.new("Joe", "Bloggs", "1 Jan 1990")
+    person.add_email "joe@foo.com"
+    person.add_phone_no "07982635473"
+    person.add_phone_no "07853648282"
 
+    expect(person.to_s).to eq "Joe Bloggs was born on 1990-01-01.\n Their email addresses are: [\"joe@foo.com\"].\n Their phone numbers are: [\"07982635473\", \"07853648282\"]"
+  end
 
 end
