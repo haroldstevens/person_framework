@@ -3,7 +3,7 @@ require 'spec_helper'
 describe "Person class" do
 
 	it 'should store and return personal information' do
-    person = Person.new("joe", "bloggs", "1 Jan 1990")
+    pwd
 
     expect(person.dob).to eq Date.new(1990,1,1) 
     expect(person.first_name).to eq "Joe"

@@ -1,3 +1,5 @@
+require 'yaml'
+
 class Person
 
   attr_reader :dob, :first_name, :surname, :emails, :phone_no

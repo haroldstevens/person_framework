@@ -1,5 +1,7 @@
 require 'rspec'
 require 'date'
+require 'pry'
+
 
 require './application'
 

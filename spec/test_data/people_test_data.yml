@@ -1,0 +1,11 @@
+person:
+  - firstname: James
+    surname: Hanson
+    dob: 16 July 1993
+    emails:
+      - hanson.james@hotmail.co.uk
+      - hanson.james11@gmail.com
+    phones:
+      - 07934274638
+      - 07977772226
+      - 07892736473

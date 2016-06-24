@@ -12,6 +12,17 @@ describe "AddressBook class" do
     expect(book.entries.length).to eq 2
   end
 
+  it 'should load people from a YAML file' do
+    book = AddressBook.new
+    book.load_yaml('./spec/test_data/people_test_data.yml')
+
+    expect(book.entries.size).to eq 1
+    expect(book.entries[0]).to be_a Person
+    expect(book.entries[0].fullname).to eq "James Hanson"
+    expect(book.entries[0].emails[0]).to eq "hanson.james@hotmail.co.uk"
+
+  end
+
 
 end
 

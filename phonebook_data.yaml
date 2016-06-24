@@ -1,0 +1,31 @@
+people:
+  - firstname: Harold
+    surname: Stevens
+    dob: 23 January 1992
+    emails:
+      - harold.stevens@hotmail.co.uk
+      - hdotman92@hotmail.com
+    phones:
+      - 07937483920
+      - 07939473527
+  - firstname: James
+    surname: Hanson
+    dob: 16 July 1993
+    emails:
+      - hanson.james@hotmail.co.uk
+    phones:
+      - 07934274638
+      - 07977772226
+      - 07892736473
+  - firstname: Jack
+    surname: Daniel
+    dob: 01 December 1988
+    emails:
+      - JD_special@gmail.com
+      - JackD@foo.co.uk
+    phones:
+      - 07873547382
+    
+
+
+
